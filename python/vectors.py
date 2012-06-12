@@ -27,7 +27,7 @@ def vectable(runs):
 
 
 
-runs = 20000
+runs = 10000
 
 for i in range(0, 5):
 	vectable(runs)

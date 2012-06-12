@@ -56,7 +56,7 @@ void vectable(unsigned int runs)
 int main(int argc, char *argv[])
 {
     
-	unsigned int runs = 20000;
+	unsigned int runs = 10000;
 	printf("Runs: %i \n", runs);
 	for (int i = 0; i < 5; ++i) {
 		vectable(runs);
