@@ -5,31 +5,33 @@ Running on Intel(R) Core(TM)2 Duo CPU E7300  @ 2.66GHz
 
 $ g++ -o vectest vectors.cpp 
 $ ./vectest 
-Runs: 20000 
-took 0.240000 seconds.  total: 20552014.257163
-took 0.240000 seconds.  total: 20358218.583018
-took 0.250000 seconds.  total: 19761179.940253
-took 0.240000 seconds.  total: 20359772.321433
-took 0.250000 seconds.  total: 19823879.466951
+Runs: 10000 
+took 0.110000 seconds.  total: 10276007.128581
+took 0.120000 seconds.  total: 10179109.291509
+took 0.120000 seconds.  total: 9880589.970127
+took 0.130000 seconds.  total: 10179886.160716
+took 0.120000 seconds.  total: 9911939.733475
 
 $ lua vectors.lua 
-#runs:3000
-table 1.00s total:3082802.145194
-table 1.00s total:2964176.997560
-table 1.00s total:2973581.921953
-table 2.00s total:3054453.419982
-table 1.00s total:2973977.504966
+#runs:10000
+table 4.00s total:10276007.150606
+table 4.00s total:9880589.991855
+table 4.00s total:9911939.739857
+table 4.00s total:10181511.399953
+table 4.00s total:9913258.349896
 
 $ python2.7 vectors.py 
-table 16.93s total: 21280812.939134
-table 16.74s total: 20668788.518434
-table 16.77s total: 20117261.582943
-table 16.76s total: 20578733.196261
-table 16.70s total: 20142438.448468
+runs: 10000
+table 8.38s total: 10022889.824988
+table 8.39s total: 10302358.525744
+table 8.42s total: 10225865.251130
+table 8.36s total: 10659115.036221
+table 8.39s total: 10760952.578622
 
 $ pypy vectors.py 
-table 0.42s total: 19950220.559595
-table 0.36s total: 20118639.992915
-table 0.37s total: 20779498.146299
-table 0.39s total: 20123740.650736
-table 0.41s total: 20616704.614609
+runs: 10000
+table 0.19s total: 9905714.849402
+table 0.19s total: 10394566.764700
+table 0.21s total: 10504072.892524
+table 0.19s total: 10605307.460215
+table 0.21s total: 10103651.445194

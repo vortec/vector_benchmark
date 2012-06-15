@@ -28,6 +28,7 @@ def vectable(runs):
 
 
 runs = 10000
+print('runs: %i' % runs)
 
 for i in range(0, 5):
 	vectable(runs)
