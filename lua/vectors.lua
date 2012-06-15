@@ -52,7 +52,7 @@ function vecarray( runs )
 end
 
 
-local runs = 3000
+local runs = 10000
 printf('#runs:%d', runs)
 for i = 1, 5 do
 	vectable(runs)
