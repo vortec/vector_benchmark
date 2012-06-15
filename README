@@ -1,0 +1,35 @@
+Benchmark Results:
+
+
+Running on Intel(R) Core(TM)2 Duo CPU E7300  @ 2.66GHz
+
+$ g++ -o vectest vectors.cpp 
+$ ./vectest 
+Runs: 20000 
+took 0.240000 seconds.  total: 20552014.257163
+took 0.240000 seconds.  total: 20358218.583018
+took 0.250000 seconds.  total: 19761179.940253
+took 0.240000 seconds.  total: 20359772.321433
+took 0.250000 seconds.  total: 19823879.466951
+
+$ lua vectors.lua 
+#runs:3000
+table 1.00s total:3082802.145194
+table 1.00s total:2964176.997560
+table 1.00s total:2973581.921953
+table 2.00s total:3054453.419982
+table 1.00s total:2973977.504966
+
+$ python2.7 vectors.py 
+table 16.93s total: 21280812.939134
+table 16.74s total: 20668788.518434
+table 16.77s total: 20117261.582943
+table 16.76s total: 20578733.196261
+table 16.70s total: 20142438.448468
+
+$ pypy vectors.py 
+table 0.42s total: 19950220.559595
+table 0.36s total: 20118639.992915
+table 0.37s total: 20779498.146299
+table 0.39s total: 20123740.650736
+table 0.41s total: 20616704.614609
